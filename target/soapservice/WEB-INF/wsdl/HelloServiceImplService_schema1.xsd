@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://service.soap.hxw.com/" xmlns:tns="http://service.soap.hxw.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Person" type="tns:Person"/>
+
+  <xs:element name="createNewPerson" type="tns:createNewPerson"/>
+
+  <xs:element name="createNewPersonResponse" type="tns:createNewPersonResponse"/>
+
+  <xs:element name="sayHello" type="tns:sayHello"/>
+
+  <xs:element name="sayHelloResponse" type="tns:sayHelloResponse"/>
+
+  <xs:complexType name="sayHello">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:Person" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+      <xs:element name="fisrtName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sayHelloResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createNewPerson">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:Person" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createNewPersonResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:Person" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

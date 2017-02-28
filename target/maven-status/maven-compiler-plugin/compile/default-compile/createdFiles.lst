@@ -1,0 +1,11 @@
+com\hxw\soap\service\jaxws\SayHelloResponse.class
+com\hxw\entity\Person.class
+com\roytus\soap\service\jaxws\SayHelloResponse.class
+com\roytus\soap\service\jaxws\SayHello.class
+com\hxw\soap\service\IHelloService.class
+com\hxw\soap\service\jaxws\CreateNewPerson.class
+com\hxw\soap\service\jaxws\CreateNewPersonResponse.class
+com\hxw\entity\Weather.class
+com\hxw\soap\service\HelloServiceImpl.class
+com\hxw\soap\service\jaxws\SayHello.class
+com\roytus\soap\service\HelloServiceImpl.class
